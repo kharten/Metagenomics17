@@ -8,3 +8,7 @@ FragmentRecruitmentPlot
 
 This script creates fragment recruitment plots using SAM files. The script assumes that the input SAM files contain an MD field. The MD field is optional in SAM files, but it may be added with the samtools command:
 samtools fillmd -S file.sam genomic.fna > file.md.sam
+
+Shorten MGM Output
+
+This script shortens the output .lst file from MetaGeneMark analysis to include only the sequence information where genes have been predicted. The script assumes that version v.3.38 of MetaGeneMark was used with the -b argument.
